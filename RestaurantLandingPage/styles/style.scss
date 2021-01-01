@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+}
+#welcome-header {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    width: 100%;
+  
+    height: 100vh;
+
+    .welcome-menu {
+        background: white;
+        padding: 50px;
+        position: relative;
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            img {
+               max-width: 100px; 
+            }
+        }
+        .menu{
+            margin-bottom: 50px;
+            .menu-title{
+                text-transform: uppercase;
+                color: blue;
+                font-weight: 750px;
+                font-size: 1.2rem;
+                border-bottom: 1px solid gray;
+                padding-bottom:20px;
+            }
+
+            .links {
+                li {
+                    a {
+                        color: black;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        text-decoration: none;
+                        margin-bottom: 1.4rem;
+                        display: block;
+                        transition: color 0.1s ease-in-out;
+                        &:hover {
+                            color: red;
+                        }
+
+                    }
+                }
+            }
+
+        }
+        .social-icons {
+            display: flex;
+            a {
+                display: flex;
+                justify-content: center;
+                background: #c2cBcc;
+                align-items: center;
+                font-size: 0.9rem;
+                
+                text-decoration: none;
+                color: white;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+        }
+        .location{
+            position: absolute;
+            bottom: 100px;
+            .address{
+                color: #7a8d99;
+                margin-bottom: 20px;
+            }
+            .phone-num {
+                a{
+                    color: blue;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .welcome-content {
+        max-width: 100%;
+        flex-direction: column;
+        background: #926faa; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #926faa 0%, #753ea3 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #926faa 0%,#753ea3 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #926faa 0%,#753ea3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+        .burgerImg {
+            max-width: 1000px;
+            width: 100%;
+            overflow: hidden;
+            // animation: moveVertical 1s linear infinite;
+            // position: relative;
+        
+        }
+        // @keyframes moveVertical {
+        //     0%, 100% {
+        //         bottom: 0;
+        //     }
+        //     50% {
+        //         bottom: 30px;
+        //     }
+        // }
+        .status {
+            display: inline-block;
+            padding: 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            background: black;
+            border-radius: 5px;
+            align-self: flex-start;
+        }
+        h1{
+            font-size: 4rem;
+            font-weight: 900;
+            align-self: flex-start;
+            color: white;
+            margin-bottom: 100px;
+        }
+
+    }
+}
+
+#info{
+   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 390px;
+   
+    .restaurantImg{
+       
+        img{
+            width: 100%;
+            max-height: 500px;
+           
+        }
+    }
+    .info {
+        margin-left: 20px;
+        .about-link:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}

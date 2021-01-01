@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 1fr;
+      grid-template-columns: 350px 1fr;
+  width: 100%;
+  height: 100vh;
+}
+
+#welcome-header ul {
+  list-style: none;
+  padding: 0;
+}
+
+#welcome-header .welcome-menu {
+  background: white;
+  padding: 50px;
+  position: relative;
+}
+
+#welcome-header .welcome-menu .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+#welcome-header .welcome-menu .logo img {
+  max-width: 100px;
+}
+
+#welcome-header .welcome-menu .menu {
+  margin-bottom: 50px;
+}
+
+#welcome-header .welcome-menu .menu .menu-title {
+  text-transform: uppercase;
+  color: blue;
+  font-weight: 750px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+
+#welcome-header .welcome-menu .menu .links li a {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  display: block;
+  -webkit-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+
+#welcome-header .welcome-menu .menu .links li a:hover {
+  color: red;
+}
+
+#welcome-header .welcome-menu .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#welcome-header .welcome-menu .social-icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #c2cBcc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#welcome-header .welcome-menu .location {
+  position: absolute;
+  bottom: 100px;
+}
+
+#welcome-header .welcome-menu .location .address {
+  color: #7a8d99;
+  margin-bottom: 20px;
+}
+
+#welcome-header .welcome-menu .location .phone-num a {
+  color: blue;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#welcome-header .welcome-content {
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #926faa;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #926faa 0%, #753ea3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+}
+
+#welcome-header .welcome-content .burgerImg {
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#welcome-header .welcome-content .status {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+#welcome-header .welcome-content h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: white;
+  margin-bottom: 100px;
+}
+
+#info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-top: 390px;
+}
+
+#info .restaurantImg img {
+  width: 100%;
+  max-height: 500px;
+}
+
+#info .info {
+  margin-left: 20px;
+}
+
+#info .info .about-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
