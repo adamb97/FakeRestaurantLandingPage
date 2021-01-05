@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Interactive Menu</title>
     <link rel="stylesheet" href="./styles/menu.css" />
+    <script src="./menu.js" defer></script>
   </head>
   <body>
-    <div class="test">
-      <h1>Test</h1>
+    <div class="wrapper">
+      <h1>Our Menu</h1>
+      <div class="carousel-container">
+        <div class="slides">
+          <img src="./img/burger4.jpg" id="lastClone" alt="" />
+          <img src="./img/burgerpic1.jpg" alt="" />
+          <img src="./img/chickenpic1.jpg" alt="" />
+          <img src="./img/burger2.jpg" alt="" />
+          <img src="./img/burger3.jpg" alt="" />
+          <img src="./img/burger4.jpg" alt="" />
+          <img src="./img/burgerpic1.jpg" id="firstClone" alt="" />
+        </div>
+      </div>
+
+      <button id="prevBtn">Previous</button>
+      <button id="nextBtn">Next</button>
     </div>
   </body>
 </html>
