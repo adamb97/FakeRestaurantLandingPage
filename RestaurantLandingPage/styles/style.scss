@@ -1,3 +1,24 @@
+$base-purp: #926faa;
+@mixin gradient {
+  background: #926faa; /* Old browsers */
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      #926faa 0%,
+      #753ea3 100%
+    ); /* FF3.6-15 */
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      #926faa 0%,
+      #753ea3 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(
+      ellipse at center,
+      #926faa 0%,
+      #753ea3 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 body {
   margin: 0;
   padding: 0;
@@ -91,24 +112,7 @@ body {
   .welcome-content {
     max-width: 100%;
     flex-direction: column;
-    background: #926faa; /* Old browsers */
-    background: -moz-radial-gradient(
-      center,
-      ellipse cover,
-      #926faa 0%,
-      #753ea3 100%
-    ); /* FF3.6-15 */
-    background: -webkit-radial-gradient(
-      center,
-      ellipse cover,
-      #926faa 0%,
-      #753ea3 100%
-    ); /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(
-      ellipse at center,
-      #926faa 0%,
-      #753ea3 100%
-    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    @include gradient();
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +145,7 @@ body {
 
 #info {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 70% 30%;
   margin-top: 390px;
 
   .restaurantImg {
@@ -151,10 +155,18 @@ body {
     }
   }
   .info {
-    margin-left: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
     .about-link:hover {
       text-decoration: underline;
       cursor: pointer;
     }
+
+    @include gradient();
+
+    
   }
 }
