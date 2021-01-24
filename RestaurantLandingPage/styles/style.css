@@ -162,8 +162,8 @@ body {
 #info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
   margin-top: 390px;
 }
 
@@ -184,7 +184,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 10px;
+  padding-left: 30px;
   background: #926faa;
   /* Old browsers */
   /* FF3.6-15 */
@@ -196,5 +196,21 @@ body {
 #info .info .about-link:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+#caroselWrapper {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#caroselWrapper img {
+  width: 350px;
 }
 /*# sourceMappingURL=style.css.map */

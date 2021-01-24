@@ -145,8 +145,9 @@ body {
 
 #info {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 60% 40%;
   margin-top: 390px;
+
 
   .restaurantImg {
     img {
@@ -159,7 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10px;
+    padding-left: 30px;
     .about-link:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -169,4 +170,16 @@ body {
 
     
   }
+}
+
+#caroselWrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    width: 350px;
+  }
+  
 }
