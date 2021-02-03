@@ -173,13 +173,17 @@ body {
 }
 
 #caroselWrapper {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 50px auto;
+  position: relative;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0,0,0,01.4);
   img {
     width: 350px;
   }
   
+  .carouselItem{
+    position: absolute;
+    
+  }
+ 
 }

@@ -199,18 +199,18 @@ body {
 }
 
 #caroselWrapper {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 50px auto;
+  position: relative;
+  width: 350px;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
 }
 
 #caroselWrapper img {
   width: 350px;
+}
+
+#caroselWrapper .carouselItem {
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
