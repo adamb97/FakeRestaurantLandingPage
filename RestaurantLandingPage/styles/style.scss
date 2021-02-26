@@ -117,11 +117,22 @@ body {
     justify-content: center;
     align-items: center;
     padding: 100px;
-    .burgerImg {
-      max-width: 1000px;
-      width: 100%;
-      overflow: hidden;
+    #caroselWrapper {
+      margin: 0px auto;
+      position: relative;
+      width: 350px;
+      box-shadow: 0 0 600px rgba(0,0,0,01.4);
+      img {
+        width: 600px;
+      }
+      
+      .carouselItem{
+      
+        position:absolute
+      }
+     
     }
+    
 
     .status {
       display: inline-block;
@@ -147,7 +158,11 @@ body {
   display: grid;
   grid-template-columns: 60% 40%;
   margin-top: 390px;
-
+  .burgerImg {
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+  }
 
 
   .info {
@@ -156,6 +171,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-left: 30px;
+    padding-top: 0px;
     .about-link:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -167,18 +183,4 @@ body {
   }
 }
 
-#caroselWrapper {
-  margin: 50px auto;
-  position: relative;
-  width: 350px;
-  box-shadow: 0 0 20px rgba(0,0,0,01.4);
-  img {
-    width: 600px;
-  }
-  
-  .carouselItem{
-    position: absolute;
-    
-  }
- 
-}
+

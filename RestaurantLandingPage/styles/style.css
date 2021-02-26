@@ -132,10 +132,20 @@ body {
   padding: 100px;
 }
 
-#welcome-header .welcome-content .burgerImg {
-  max-width: 1000px;
-  width: 100%;
-  overflow: hidden;
+#welcome-header .welcome-content #caroselWrapper {
+  margin: 0px auto;
+  position: relative;
+  width: 350px;
+  -webkit-box-shadow: 0 0 600px black;
+          box-shadow: 0 0 600px black;
+}
+
+#welcome-header .welcome-content #caroselWrapper img {
+  width: 600px;
+}
+
+#welcome-header .welcome-content #caroselWrapper .carouselItem {
+  position: absolute;
 }
 
 #welcome-header .welcome-content .status {
@@ -167,6 +177,12 @@ body {
   margin-top: 390px;
 }
 
+#info .burgerImg {
+  max-width: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+
 #info .info {
   color: white;
   display: -webkit-box;
@@ -180,6 +196,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 30px;
+  padding-top: 0px;
   background: #926faa;
   /* Old browsers */
   /* FF3.6-15 */
@@ -191,21 +208,5 @@ body {
 #info .info .about-link:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-#caroselWrapper {
-  margin: 50px auto;
-  position: relative;
-  width: 350px;
-  -webkit-box-shadow: 0 0 20px black;
-          box-shadow: 0 0 20px black;
-}
-
-#caroselWrapper img {
-  width: 600px;
-}
-
-#caroselWrapper .carouselItem {
-  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */
